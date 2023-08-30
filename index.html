@@ -1,0 +1,1155 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Pacifico&family=Roboto:wght@700&family=Tilt+Prism&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Prism&display=swap');
+    *{
+        margin: 0; 
+        scroll-behavior: smooth;  
+    }
+   
+    body{
+        background-image: url(./barfinal.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgb(12, 0, 0);
+        font-family: 'Lora', serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    input{
+        height: 30px;
+    }
+    button{
+        height: 31px;
+        background-color: #3b3b3b;
+        color: white;
+        font-weight: 500;
+    }
+    .code_x_lr{
+        position: absolute;
+        font-size: 50px;
+        font-weight: 1000;
+        cursor: pointer;
+        color: rgb(120, 120, 120);
+        top: 0;
+        right: 25px;
+    }
+    .bar
+    {
+       display: flex;
+       justify-content: space-between;
+       position: relative;
+        width: 100%;
+       padding-top: 60px;
+       padding-bottom: 60px;
+       background-image: linear-gradient( rgba(71, 56, 56, 0.8), rgba(71, 56, 56, 0.8),rgba(71, 56, 56, 0.8));
+       
+
+    }
+    .bar{
+        position: sticky;
+        top: 0;
+    }
+   
+    .bb{
+       margin-left: 20px;
+       margin-right: 20px;
+
+    }
+    .close_bar{
+        position: relative;
+        margin-top: 10%;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(46, 46, 46);
+        
+      
+    }
+    .contact_us{
+       
+        margin: auto;
+        width: 90%;
+        height:40%;
+        border-radius: 20px;
+        margin-top: 50px;
+        background-color: white;
+        padding: 20px;
+        background-image: url(./bf.jpg) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+    .info{
+        margin: auto;
+        width: 90%;
+        height:max-content;
+        border-radius: 20px;
+        margin-top: 50px;
+        background-color: white;
+        padding: 20px;
+        background-image: url(./contact.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgb(237, 206, 178);
+    }
+    .close_bar1{
+        position: relative;
+        margin-top: 10%;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(46, 46, 46);
+    }
+    .last{
+        display: flex;
+        justify-content:space-between;
+        
+    }
+    .close_bar2{
+        position: relative;
+        margin-top: 10%;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(46, 46, 46);
+    }
+    .ful{
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .book{
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        
+    }
+    .tit{
+        margin-top: 200px;
+        height: 40px;
+        width:200px; 
+        background-color: #323232;
+        color: #c2c2c2;
+        font-size: 20px;
+        text-align: center;   
+        padding-top: 12px;   
+        
+
+    }
+    .book:hover{
+        position: relative;
+        transition: 1s;
+        width: 400px;
+        height: 400px;
+        .tit{
+            transition: 1s; 
+            margin-top: 400px;
+            width: 400px;
+
+        }
+    }
+    .fully{
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    video{
+        position: relative;
+        top: -17%;
+        width: 448.5px;
+        height: 350px;
+    }
+    video:hover{
+        transition: 1s;
+        top: -15.7%;
+        width: 800px;
+        height: 600px;
+    }
+    .vid{
+        border: 1px solid rgb(0, 0, 0);
+        color: #c2c2c2;
+        text-align: center;
+    }
+    .login_page{
+        position: absolute;
+        height:70%;
+        width: 50%;
+        background-image: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.9),black);
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        box-shadow: 5px 5px 10px black;
+        display: none;
+        animation: login .8s linear;
+
+    }
+    .in_login_page{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 75%;
+        width: 55%;
+        background-image: linear-gradient(to right,rgb(43, 42, 42),rgb(69, 62, 62));
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        animation: login .5s linear;
+       
+    }
+    @keyframes login{
+        0% {
+            position: absolute;
+            top: -200px;    
+            opacity: .3;    
+        }
+        100%{
+            
+        }
+    }
+    .register_page{
+        position: absolute;
+        height:70%;
+        width: 50%;
+        background-image: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.9),black);
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        box-shadow: 5px 5px 10px black;
+        display: none;
+        animation: login .8s linear;
+
+    }
+    .in_register_page{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 75%;
+        width: 55%;
+        background-image: linear-gradient(to right,rgb(43, 42, 42),rgb(69, 62, 62));
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        animation: login .5s linear;
+       
+    }
+    .code_x{
+        position: absolute;
+        font-size: 50px;
+        font-weight: 1000;
+        cursor: pointer;
+        color: rgb(120, 120, 120);
+        top: 0px;
+        right: 25px;
+
+
+    }
+    .search_full{
+        position: relative;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-40%);
+        width: 75%;
+        height:70%;
+        background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.6),black),url(./search.jpg);
+        background-size: cover;
+        border-radius: 50px;
+        display: none;
+        animation: onsearch 1s normal;
+        cursor: no-drop;
+    }
+     @keyframes onsearch{
+        from{
+            opacity:0.4;
+            height: 90%;
+            width: 95%;
+        }
+        to{
+            opacity:1;
+        }
+    } 
+    /* dragon ball */
+  .d0{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./dragon_ball.jpg);
+    background-size: cover;
+    opacity: .8;
+    
+   }   
+  .d00{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* one piece */
+  .d1{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./one_piece.png);
+    background-size: cover;
+    opacity: .8;
+    
+   }   
+  .d11{
+    position: relative;
+    top: 100%;
+    width: 96.8%;
+    left: 6px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+   
+  }
+  /* naruto */
+  .d2{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./naruto.jpg);
+    background-size: cover;
+    opacity: .8;
+    
+   }   
+  .d22{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* aot */
+  .d3{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./aot.WCaDsKNVY1B7tYi0Km-r2QAAAA);
+    background-size: cover;
+    opacity: .8;
+    
+   }   
+  .d33{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* tokyo revengers */
+  .d4{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./tr.jpg);
+    background-size: cover;
+    opacity: .8;
+   }   
+  .d44{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* bleach */
+  .d5{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./bleach.jpg);
+    background-size: cover;
+    opacity: .8;
+   }   
+  .d55{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* opm */
+  .d6{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./opm.jpg);
+    background-size: cover;
+    opacity: .8;
+   }   
+  .d66{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  } 
+  /* death note */
+  .d7{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./death_note.jpg);
+    background-size: cover;
+    opacity: .8;
+   }   
+  .d77{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* demon slayer */
+  .d8{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./demon\ slayer.jpg);
+    background-size: cover;
+    opacity: .8;
+   }   
+  .d88{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+  /* black clover */
+  .d9{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 65%;
+    background-image:url(./black\ clover.jpg);
+    background-size: cover;
+    opacity: .8;
+   }   
+  .d99{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #795C32;
+    color: #2B1700;
+    text-align: center;
+    padding-top: 10px;
+  }
+ /*///////////////////////////////////////////////////////////////////////*/
+ .list_x{
+        position: absolute;
+        font-size: 50px;
+        font-weight: 1000;
+        cursor: pointer;
+        color: rgb(120, 120, 120);
+        top: 0px;
+        right: 25px;
+    }
+    .code_next{
+        position: absolute;
+        font-size: 50px;
+        font-weight: 1000;
+        cursor: pointer;
+        color: rgb(120, 120, 120);
+        top: 50%;
+        right: 25px;
+        background-color: transparent;
+        height: max-content;
+        width: max-content;
+    }
+    .bookslide{
+        position: absolute;
+        cursor: no-drop;
+        width: 1100px;
+        height: 100%;
+        background-image: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.4),black),url(./book_display.jpg);
+        animation: drope-by 2s none ;
+       display: none;
+       background-size: cover;
+    }
+    @keyframes drope-by{
+    0%{
+    position: absolute;
+   
+    width: 0;
+    height: 100%;
+   
+   }
+   100%{
+    position: absolute;
+    
+    width: 1100px;
+    height: 100%;
+   
+    }
+   }
+    
+    .bookslide_a{
+
+        display: block;
+        margin: 40px 40px 40px 40px;
+        width: 900px;
+        height: 50px;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        animation: list_of_books 1.5s ease-in-out ;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: underline;
+       
+    }
+    @keyframes list_of_books{
+    0%{
+        display: block;
+   
+    width: 0;
+    height: 50px;
+   }
+   100%{
+    display: block;
+    width: 900px;
+        height: 50px;
+    }
+   }
+    
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+ <!-- top bar -->
+<div class="bar">
+    <div class="bb"><button class="bt" id="bt" type="button" onclick="display_book()">MANGA</button></div>
+    <div class="bb"><input onclick="del_filter()" type="text" id="filter_value" placeholder="search by year/author/genre ....." list="fil">
+        <datalist id="fil">
+            <option>dragon_ball</option>
+            <option>one_piece</option>
+            <option>naruto</option>
+            <option>attack_on_titan</option>
+            <option>tokyo_revengers</option>
+            <option>bleach</option>
+            <option>one_punch_man</option>
+            <option>death_note</option>
+            <option>demon_slayer</option>
+            <option>black_clover</option>
+            <option>Aiira Toriyama</option>
+            <option>Eiichiro Oda</option>
+            <option>Masashi Kishimoto</option>
+            <option>Hajime Isayama</option>
+            <option>Ken Wakui</option>
+            <option>Tite Kubo</option>
+            <option>one & yusuke murata</option>
+            <option>Tsugumi Ohba</option>
+            <option>Koyoharu Gotouge</option>
+            <option>Yuki Tabata</option>
+            <option>god of anime</option>
+            <option>big 3</option>
+            <option>Shonen</option>
+            <option>thriller</option>
+            <option>action</option>
+            <option>comedy</option>
+            <option>horror</option>
+            <option>fantasy</option>
+        
+        </datalist>
+        <button class="bt" id="bt" type="button" onclick="required()">FILTER</button></div>
+    <div class="bb"><input type="text" id="add_value" placeholder="add your book ....."><button class="bt" id="bt" type="button" onclick="add()">TO_ADD</button></div>
+    <div class="bb"><input type="text" id="del_value" placeholder="remove the book ....."><button class="bt" id="bt" type="button" onclick="del()">TO_DEL</button></div>
+    <div class="bb"><button><a style="text-decoration: none;background-color: #3b3b3b;color: white;font-weight: 500;" href="#info">INFO</a></button></div>
+    <div class="bb"><button><a style="text-decoration: none;background-color: #3b3b3b;color: white;font-weight: 500;" href="#contact_us">CONTACT_US</a></button></div>
+    <div class="bb">
+        <input type="text" id="ip" list="input" onclick="disable()" placeholder="browse your need .....">
+            <datalist id="input">
+                <option value="dragon ball">dragon ball</option
+                <option value="one piece">one piece</option>
+                <option value="naruto">naruto</option>
+                <option value="attack on titan">attack on titan</option>
+                <option value="tokyo revengers">tokyo revengers</option>
+                <option value="bleach">bleach</option>
+                <option value="one punch man">one punch man</option>
+                <option value="death note">death note</option>
+                <option value="demon slayer">demon slayer</option>
+                <option value="black clover">black clover</option>
+            </datalist>
+    <button type="button" onclick="search()"><span class="fa-solid fa-search"></span></button>
+    </div>
+    <div class="bb">
+    <button>
+        <span  onclick="login()">Login</span>
+        <strong> / </strong>
+        <span  onclick="register()">Register</span></button>
+    </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////// -->
+<div class="bookslide" id="bookslide">
+    <p style="cursor: pointer;" onclick="dis_x()" class="list_x">&#10005;</p>
+    <button onclick="nextpage()" class="code_next">></button>
+    <div class="bookslide_a" style="text-decoration: none;font-size: 40px; font-weight: 1000;cursor: pointer;">MANGA_AVAILABLE:-</div>
+    <div class="bookslide_a" id="a0"></div>
+    <div class="bookslide_a" id="a1"></div>
+    <div class="bookslide_a" id="a2"></div>
+    <div class="bookslide_a" id="a3"></div>
+    <div class="bookslide_a" id="a4"></div>
+    <div class="bookslide_a" id="a5"></div>
+    <div class="bookslide_a" id="a6"></div>
+    <div class="bookslide_a" id="a7"></div>
+    <div class="bookslide_a" id="a8"></div>
+    <div class="bookslide_a" id="a9"></div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////// -->
+    <div class="login_page" id="lp">
+        <p  onclick="close_login()" class="code_x_lr">&#10005;</p>
+
+           <div class="in_login_page">
+                <h1 
+                style="margin-left: 30px; font-size: 70px;  "
+                >Login :-</h1><br><br><br>
+                <h1 style="margin-left: 20px;font-size: 40px;">User_Name:</h1><br><br>
+                <input type="text" style="margin-left: 20px; width: 90%; height: 40px;">
+                <br><br><br><br>
+                <h1 style="margin-left: 20px;font-size: 40px;">Password:</h1><br><br>
+                <input type="password" style="margin-left: 20px; width: 90%; height: 40px;">
+                <br><br><br>
+                <span style="margin-left: 20px;font-size: 25px;text-decoration: underline; color: rgb(15, 79, 198); cursor: pointer;" onclick="register()">create new account!</span>
+                <button type="button" onclick="close_login()" style="cursor: pointer;width: 30%; height: 10%; font-weight: 800; border-radius: 20px; margin-left: 20%;font-size: 20px;">login</button>
+
+           </div>
+    </div>
+    <div class="register_page" id="rp">
+        <p  onclick="close_register()" class="code_x_lr">&#10005;</p>
+        <div class="in_register_page">
+             <h1 
+             style="margin-left: 30px; font-size: 65px;  "
+             >Register :-</h1><br><br>
+             <h1 style="margin-left:20px;">First_name:</h1><br>
+             <input type="text" style="margin-left: 20px; width: 90%; height: 30px;"><br>
+             <h1 style="margin-left:20px;">Last_name:</h1><br>
+             <input type="text" style="margin-left: 20px; width: 90%; height: 30px;"><br>
+             <h1 style="margin-left:20px;">Phone_no / e-mail:</h1><br>
+             <input type="text" style="margin-left: 20px; width: 90%; height: 30px;"><br>
+             <h1 style="margin-left:20px;">New_password</h1><br>
+             <input type="text" style="margin-left: 20px; width: 90%; height: 30px;"><br><br>
+             <button type="button" onclick="close_register()" style="cursor: pointer;width: 30%; height: 10%; font-weight: 800; border-radius: 20px; margin-left: 35%;font-size: 20px;">register</button>
+
+        </div>
+ </div>
+ <!-- top bar -->
+ <!-- search -->
+    <!-- dragon ball -->
+    <div class="search_full" id="f0" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d0" id="d0"><div class="d00">DRANGON BALL</div></div>
+    </div>
+    <!-- one piece -->
+    <div class="search_full" id="f1" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d1" id="d1"><div class="d11">ONE PIECE</div></div>
+    </div>
+    <!-- naruto -->
+    <div class="search_full" id="f2" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d2" id="d2"><div class="d22">NARUTO</div></div>
+    </div>
+    <!-- aot -->
+    <div class="search_full" id="f3" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d3" id="d3"><div class="d33">ATTACK ON TITAN </div></div>
+    </div>
+    <!-- tokyo revengers -->
+    <div class="search_full" id="f4" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d4" id="d4"><div class="d44">TOKYO REVENGERS</div></div>
+    </div>
+    <!-- bleach -->
+    <div class="search_full" id="f5" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d5" id="d5"><div class="d55">BLEACH</div></div>
+    </div>
+    <!-- opm -->
+    <div class="search_full" id="f6" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d6" id="d6"><div class="d66">ONE PUNCH MAN</div></div>
+    </div>
+    <!-- DEATH NOTE -->
+    <div class="search_full" id="f7" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d7" id="d7"><div class="d77">DEATH NOTE</div></div>
+    </div>
+    <!-- DEMON SLAYER -->
+    <div class="search_full" id="f8" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d8" id="d8"><div class="d88">DEMON SLAYER</div></div>
+    </div>
+    <!-- BLACK CLOVER -->
+    <div class="search_full" id="f9" >
+        <p  onclick="reverse()" class="code_x">&#10005;</p>
+        <div class="d9" id="d9"><div class="d99">BLACK CLOVER</div></div>
+    </div>
+<!-- search -->
+<div class="ful">
+    <div class="book" style="background-image:url(./dragon_ball.jpg);">
+        <div class="tit">DRAGON BALL</div>
+    </div>
+    <div class="book" style="background-image:url(./one_piece.png);">
+        <div class="tit">ONE PIECE</div>
+    </div>
+    <div class="book" style="background-image:url(./naruto.jpg);">
+        <div class="tit">NARUTO</div>
+    </div>
+    <div class="book" style="background-image:url(./aot.WCaDsKNVY1B7tYi0Km-r2QAAAA);">
+        <div class="tit">ATTACK ON TITAN</div>
+    </div>
+   
+</div>
+<br><br><br><br>
+<div class="ful">
+    <div class="book" style="background-image:url(./tr.jpg);">
+        <div class="tit">TOKYO REVENGERS</div>
+    </div>
+    <div class="book" style="background-image:url(./bleach.jpg);">
+        <div class="tit">BLEACH</div>
+    </div>
+    <div class="book" style="background-image:url(./opm.jpg);">
+        <div class="tit">ONE PUNCH MAN</div>
+    </div>
+    <div class="book" style="background-image:url(./death_note.jpg);">
+        <div class="tit">DEATH NOTE</div>
+    </div>
+</div>
+<br><br><br><br>
+
+<div class="fully">
+    <div class="book" style="background-image:url(./demon\ slayer.jpg);">
+        <div class="tit">DEMON SLAYER</div>
+    </div>
+    <div class="book" style="background-image:url(./black\ clover.jpg);">
+        <div class="tit">BLACK CLOVER</div>
+    </div>
+    <div class="vid" >
+        
+        <video autoplay muted loop>
+            <source src="video.mkv" type="video/mp4">
+            
+        </video>
+        <figcaption style="margin-top: -17%;">READ IN WORDS, IMAGINE IN ACTION </figcaption>
+  
+    </div>
+</div>
+<br><br><br><br>
+
+<div class="close_bar"></div>
+
+
+
+<div class="info" id="info" style="color: black;">
+    <strong style="font-size: 35px; ">Manga:-</strong>
+    <button type="button" onclick="getsummary()" class="fa-solid fa-search" 
+    style="
+    float: right;
+    font-size: 20px;
+    font-weight: bold;"
+  ></button>
+    <input type="text" id="sum" list="summary"
+    style="
+      float: right;
+      height: 30px;"
+    >
+    
+    <datalist id="summary">
+        <option>dragon_ball</option>
+        <option>one_piece</option>
+        <option>naruto</option>
+        <option>attack_on_titan</option>
+        <option>tokyo_revengers</option>
+        <option>bleach</option>
+        <option>one_punch_man</option>
+        <option>death_note</option>
+        <option>demon_slayer</option>
+        <option>black_clover</option>
+    </datalist>
+    <br><br>
+    <p style="font-size: 25px; text-align: center; ">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Manga is an umbrella term for a wide variety of comic books and graphic novels originally produced and published in Japan. Unlike American comic books, which are usually printed in full color, Japanese manga are almost always published in black and white. Full-color prints are often only used for special releases. 
+Japanese manga is read right-to-left rather than left-to-right, which is the norm for English language publications. This can take some getting used to if you have only ever read English publications,  but you will hardly notice once you’ve practiced enough. 
+In Japan, manga are typically released on a monthly or a weekly chapter-by-chapter basis through manga magazines such as Weekly Shōnen Jump, (which has been in circulation since 1968). If a series is popular enough, its chapters are then collected and published into volumes called tankōbon volumes, which usually feature a few chapters of the overall story. 
+Most manga series are long-running and can span multiple volumes. This is something to keep in mind when starting a new series as it is imperative you read the volumes in the correct order. This might be easier for small series, such as Naoko Takeuchi's Sailor Moon, which only has about 12 volumes, versus longer-running series such as Akira Toriyama's Dragon Ball, which has 42 volumes. 
+    </p>
+    <br><br><br>
+    <strong style="font-size: 35px; ">What is the difference between manga and anime?</strong>
+    <br><br>
+    <p style="font-size: 25px; text-align: center; ">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        Anime is yet another umbrella term for all forms of animation created and published in Japan. When most people hear the word 'anime,' they think of adaptations of manga series, such as Dragon Ball Z and Sailor Moon. Both television shows boosted the popularity of Japanese anime in the west when they aired on American TV during the 1990s.
+If a manga series is popular enough, it might then become an anime, as was the case with both Dragon Ball and Sailor Moon. In some cases, the opposite is true; a popular original anime will be given a manga adaptation. However, the two terms are not interchangeable.
+Anime is animation. Manga is print. That is the difference. </p>
+<br><br><br>
+<strong style="font-size: 35px; ">Where should I start?</strong>
+<br><br>
+<p style="font-size: 25px; text-align: center; ">
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    The most important thing to remember about manga is there is something for everyone. Whether you like high school romantic comedies or high-fantasy epics, there is a manga for you.
+    Manga is chiefly categorized by audience first, then genre. For example, CLAMP's Cardcaptor Sakura is a shojo (young girls) "magical girl" (sub-genre) manga. However, this does not mean a boy cannot enjoy the series. That is simply how they are marketed. If you were looking for manga for a young boy who likes fantasy or mystery, you would search for "shonen (boy) fantasy" or "shonen mystery" manga.    
+    We would need an entirely different blog post to cover the gargantuan number of manga genres and sub-genres that exist so, for now, we will simply cover the types of audiences to which manga are marketed.  If you are looking for more information on manga genres and subgenres, then check out: Beginner's Guide to Manga 3: Genres and Subgenres.
+    
+    Don't forget to check out our handy Manga for Middle-Schoolers guide for further recommendations! </p>
+</div>
+<div class="close_bar1"></div>
+
+
+
+<div class="contact_us" id="contact_us" style="color: black;">
+   <div><strong style="font-size: 35px; ">CONTACT US :- </strong></div>
+   <br><br>
+   <div class="last">
+    <div style="width: 30%; height: max-content;font-size: 35px;">
+        <span style="font-size: 50px;" class="fa-solid fa-phone"></span>
+        <br><br><b>
+        phone no:- <br><br>
+        7708867301</b>
+    </div>
+    <div style="width: 30%; height: max-content;font-size: 35px;">
+        <strong style="font-size: 50px;"class="fa-solid fa-message"></strong>
+        <br><br><b>
+            E-mail:- <br><br>
+            M_r_K@hotmail.com</b>
+    </div>
+    <div style="width: 30%; height: max-content;font-size: 35px;">
+        <span style="font-size: 50px;"class="fa-solid fa-location-dot"></span>
+        <br><br><b>
+           Address:- <br><br>
+            KCE,Coimbatore</b>
+    </div>
+   </div>
+</div>
+<div class="close_bar2"></div>
+
+</body>
+</html>
+<script>
+    function login(){
+       let log = document.getElementById('lp')
+       log.style="display: block;"
+       let reg = document.getElementById('rp')
+       reg.style="display: none;"
+    }
+    function close_login(){
+        let log = document.getElementById('lp')
+       log.style="display: none;"
+    }
+    function register(){
+        let reg = document.getElementById('rp')
+       reg.style="display: block;"
+       let log = document.getElementById('lp')
+       log.style="display: none;"
+    }
+    function close_register(){
+        let reg = document.getElementById('rp')
+       reg.style="display: none;"
+    }
+    let arr=['dragon ball','one piece','naruto','attack on titan','tokyo revengers','bleach','one punch man','death note','demon slayer','black clover'];
+    let text = document.getElementById('ip');
+    let seached_item = '';
+    function search(){
+       let check=0;
+       for(let i=0;i<arr.length;i++){
+        if(text.value==arr[i]){
+            search_item= document.getElementById('f'+i)
+            document.getElementById('f'+i).style="display: block;"
+            check++;
+        }
+        if(check==1){
+            break;
+        }
+       }
+       if(check==0){
+        if(text.value=='')
+        alert("Invalid search");
+        else
+        alert("Sorry sir/mam, The mentioned book '"+text.value+"' is not available curently")
+       }
+       else{
+        check=0;
+       }
+      text.value="";
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    let book_arr=[
+            {
+                name:'dragon_ball',
+                author:'Akira Toriyama',
+                year:'1984',
+                genre:'Shonen',
+                title:'god of anime',
+            },
+            {
+                name:'one_piece',
+                author:'Eiichiro Oda',
+                year:'1997',
+                genre:'Shonen',
+                title:'big 3',
+            },
+            {
+                name:'naruto',
+                author:'Masashi Kishimoto',
+                year:'1999',
+                genre:'Shonen',
+                title:'big 3',
+            },
+            {
+                name:'attack_on_titan',
+                author:'Hajime Isayama',
+                year:'2009',
+                genre:'thriller',
+                title:'none',
+            },
+            {
+                name:'tokyo_revengers',
+                author:'Ken Wakui',
+                year:'2021',
+                genre:'action',
+                title:'none',
+
+            },
+            {
+                name:'bleach',
+                author:'Tite Kubo',
+                year:'2001',
+                genre:'Shonen',
+                title:'big 3',
+            },
+            {
+                name:'one_punch_man',
+                author:'one & yusuke murata',
+                year:'2013',
+                genre:'comedy hero',
+                title:'none',
+
+            },
+            {
+                name:'death_note',
+                author:'Tsugumi Ohba',
+                year:'2006',
+                genre:'horror',
+                title:'none',
+
+            },
+            {
+                name:'demon_slayer',
+                author:'Koyoharu Gotouge',
+                year:'2016',
+                genre:'fantasy',
+                title:'none',
+
+            },
+            {
+                name:'black_clover',
+                author:'Yuki Tabata',
+                year:'2015',
+                genre:'fantasy',
+                title:'none',
+
+            },
+];
+    let brr=[];
+    let book_list= document.getElementById('bookslide');
+    let dis_btn = document.getElementById('bt');
+    let filter_arr=[];
+    function required(){
+        let size =0;
+        book_list.style="display:block;";
+        let filter_data = document.getElementById('filter_value').value;
+        let xdata = document.getElementById('filter_value');
+        xdata.value="";
+        if(filter_data == ""){
+            display_book();
+        }
+       else{
+        for(let i=0;i<book_arr.length;i++){
+            let data = book_arr[i];
+            if(filter_data==data.name ||filter_data==data.author ||filter_data==data.genre ||filter_data<=data.year  || filter_data==data.title){
+                filter_arr[size]=data.name;
+                size++;
+            }
+        } 
+        if(filter_arr.length==0){
+            let a = document.getElementById('a1');
+                    document.getElementById('a1').style=" text-align: center;  text-transform: uppercase;"
+                    a.innerHTML="OOPS !,Sorry sir/mam we do not have that item";
+        }
+        else{
+        for(let i =0;i<size;i++){
+                    let a = document.getElementById('a'+i);
+                    document.getElementById('a'+i).style=" text-align: center;  text-transform: uppercase;"
+                    a.innerHTML=filter_arr[i];  
+            }
+           
+        }
+       }
+       }
+    function del_filter(){
+        let filter_data = document.getElementById('filter_value').value;
+        for(let i=0;i<10;i++){
+            let a = document.getElementById('a'+i);
+            a.innerHTML="";
+        }
+
+    }
+    function display_book(){
+        book_list.style="display:block;";
+        for(i=0;i<book_arr.length;i++){
+            let data = book_arr[i];
+           let a = document.getElementById('a'+i);
+           document.getElementById('a'+i).style=" text-align: center;  text-transform: uppercase;"
+           a.innerHTML=data.name;        
+       }
+       
+
+    }
+    function nextpage(){
+        book_list.style="display:block;";
+        if(brr.length==0){
+            alert("Sorry sir/mam, We do not have any extra stock ;");
+        }
+        else{
+            for(i=0;i<10;i++){
+            let b = document.getElementById('a'+i);
+            document.getElementById('a'+i).style=" text-align: center;  text-transform: uppercase;"
+                    if(brr[i]==null)
+                    b.innerHTML="";
+                    else
+                    b.innerHTML=brr[i];        
+        }
+     }
+    }
+    function dis_x(){
+       book_list.style="display:none;"
+       dis_btn.style="display:block;"
+    }
+    function add(){
+        let add_text = document.getElementById('add_value');
+        let size = brr.length;
+        brr[size]=add_text.value;
+        add_text.value="";
+    }
+    function del(){
+        let del_text = document.getElementById('del_value');
+        let num = brr.indexOf(del_text.value);
+        delete brr[num];
+        del_text.value="";
+        for(let i = num;i<brr.length-1;i++)
+        brr[i]=brr[i+1];
+        brr.length--;
+    }
+    function disable(){
+   search_item.style="display:none";
+   
+    }
+    function reverse(){
+        search_item.style="display:none";
+       
+    }
+    function getsummary(){
+        let a = document.getElementById('sum');
+        for(let i =0;i<book_arr.length;i++){
+            let data = book_arr[i];
+            if(data.name==a.value){
+               
+                if(data.title=='none')
+                alert("Manga Name : "+data.name+"\nAuthor : "+data.author+"\nPublished Year : "+data.year+"\nGenre : "+data.genre);
+                else
+                alert("Manga Name : "+data.name+"\nAuthor : "+data.author+"\nPublished Year : "+data.year+"\nGenre : "+data.genre+"\nTitle : "+data.title);
+
+            }
+        }
+        a.value="";
+    }
+</script>
